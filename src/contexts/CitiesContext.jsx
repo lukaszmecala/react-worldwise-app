@@ -50,13 +50,33 @@ function CitiesProvider({ children }) {
       setCities((cities) => [...cities, data]);
       setIsLoading(false);
     } catch {
-      alert("Failed to fetch cities");
+      alert("Failed to create cities");
+    }
+  }
+
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      const response = await fetch(`${BASE_URL}/cities/${id}`, {
+        method: "DELETE",
+      });
+      setCities((cities) => cities.filter((city) => city.id !== id));
+      setIsLoading(false);
+    } catch {
+      alert("Failed to delete cities");
     }
   }
 
   return (
     <CitiesContxt.Provider
-      value={{ cities, isLoading, currentCities, getCity, createCity }}
+      value={{
+        cities,
+        isLoading,
+        currentCities,
+        getCity,
+        createCity,
+        deleteCity,
+      }}
     >
       {children}
     </CitiesContxt.Provider>

@@ -23,42 +23,6 @@
         "lng": -3.7133789062500004
       },
       "id": "17806751"
-    },
-    {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
-      "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
-    },
-    {
-      "id": "f1b2",
-      "cityName": "Lubin",
-      "country": "Poland",
-      "date": "2024-12-16T19:08:04.650Z",
-      "notes": "test",
-      "emoji": "🇵🇱",
-      "position": {
-        "lat": 51.37178037591739,
-        "lng": 16.193847656250004
-      }
-    },
-    {
-      "id": "5a9e",
-      "cityName": "Murow",
-      "country": "Poland",
-      "date": "2024-12-16T19:13:43.520Z",
-      "notes": "tets",
-      "emoji": "🇵🇱",
-      "position": {
-        "lat": 50.88917404890332,
-        "lng": 17.907714843750004
-      }
     }
   ]
 }
