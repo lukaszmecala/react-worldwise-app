@@ -36,10 +36,27 @@ function CitiesProvider({ children }) {
       alert("Failed to fetch cities");
     }
   }
+  async function createCity(newCity) {
+    try {
+      setIsLoading(true);
+      const response = await fetch(`${BASE_URL}/cities/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newCity),
+      });
+      const data = await response.json();
+      setCities((cities) => [...cities, data]);
+      setIsLoading(false);
+    } catch {
+      alert("Failed to fetch cities");
+    }
+  }
 
   return (
     <CitiesContxt.Provider
-      value={{ cities, isLoading, currentCities, getCity }}
+      value={{ cities, isLoading, currentCities, getCity, createCity }}
     >
       {children}
     </CitiesContxt.Provider>
