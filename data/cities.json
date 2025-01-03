@@ -13,18 +13,6 @@
       "id": "73930385"
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      },
-      "id": "17806751"
-    },
-    {
       "id": "b9f4",
       "cityName": "Opole",
       "country": "Poland",
@@ -34,6 +22,18 @@
       "position": {
         "lat": 50.6947178381929,
         "lng": 17.951660156250004
+      }
+    },
+    {
+      "id": "5e57",
+      "cityName": "Warsaw",
+      "country": "Poland",
+      "date": "2025-01-03T18:26:04.936Z",
+      "notes": "Amazing city!!!",
+      "emoji": "🇵🇱",
+      "position": {
+        "lat": 52.1874047455997,
+        "lng": 21.071777343750004
       }
     }
   ]
